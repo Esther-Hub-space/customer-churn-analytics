@@ -1,0 +1,52 @@
+CUSTOMER CHURN - RETENTION STRATEGY
+============================================================
+
+1. MODEL AND DATA
+Model: hist_gradient_boosting
+Customers analyzed: 1,409
+Source: held-out Phase 8 predictions
+Model retrained: No
+Test labels used for targeting: No
+
+2. CAMPAIGN ASSUMPTIONS
+Planning horizon: 6 months
+Budget: 10,000.00
+Contact cost: 20.00
+Currency: not specified by dataset
+
+3. RISK DISTRIBUTION
+risk_segment  customers  mean_churn_probability  total_monthly_charges  planning_exposure  customer_share_pct
+         Low        825                0.080516               47070.90       26402.161383           58.552165
+      Medium        290                0.376085               20432.90       46176.147771           20.581973
+        High        203                0.613122               15478.75       57248.202085           14.407381
+    Critical         91                0.829288                7318.65       36519.217550            6.458481
+
+4. PRIORITIZATION
+Eligible customers: 584
+Selected contacts: 500
+Allocated budget: 10,000.00
+Selected planning exposure: 134,065.17
+
+5. CAMPAIGN SCENARIOS
+    scenario  contacts  assumed_effectiveness  campaign_cost  planning_exposure  potential_benefit  net_benefit    roi_pct
+Conservative       500                   0.05        10000.0      134065.167912        6703.258396 -3296.741604 -32.967416
+        Base       500                   0.15        10000.0      134065.167912       20109.775187 10109.775187 101.097752
+  Optimistic       500                   0.30        10000.0      134065.167912       40219.550373 30219.550373 302.195504
+
+6. BUSINESS RECOMMENDATIONS
+- Prioritize customers with material risk and value.
+- Test outreach on a randomized eligible sample.
+- Include a comparable no-offer control group.
+- Measure incremental retention, not just churn.
+- Track actual campaign costs and margins.
+- Obtain appropriate contact consent.
+
+7. IMPORTANT LIMITATIONS
+- This is a retrospective test-set demonstration.
+- No campaign treatment effect was estimated.
+- Scenario effectiveness rates are assumptions.
+- ROI values are illustrative, not forecasts.
+- Monthly charges are not profit margins.
+- The dataset does not specify currency.
+- Model scores may require calibration.
+- Do not tune models using these test outcomes.

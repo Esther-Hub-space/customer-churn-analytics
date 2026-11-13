@@ -1,0 +1,58 @@
+CUSTOMER CHURN - MODEL EVALUATION REPORT
+============================================================
+
+1. MODEL INFORMATION
+Selected model: hist_gradient_boosting
+Selection: Phase 7 training cross-validation
+Preprocessing: saved fitted pipeline
+Held-out test set: evaluated without fitting
+
+2. TEST DATASET
+Customers: 1,409
+Actual churned: 374
+Predicted churned: 294
+Decision threshold: 0.50
+
+3. PERFORMANCE METRICS
+Accuracy: 0.7999
+Precision: 0.6565
+Recall: 0.5160
+F1-score: 0.5778
+ROC-AUC: 0.8439
+Average precision: 0.6586
+Brier score: 0.1361
+
+4. CONFUSION MATRIX
+True negatives: 934
+False positives: 101
+False negatives: 181
+True positives: 193
+
+5. TOP PERMUTATION IMPORTANCES
+        feature  importance_mean  importance_std
+       Contract         0.101907        0.006819
+         tenure         0.057680        0.000977
+InternetService         0.011715        0.004100
+ MonthlyCharges         0.008098        0.003845
+ OnlineSecurity         0.006272        0.000819
+   TotalCharges         0.004735        0.002125
+    TechSupport         0.004354        0.001520
+  PaymentMethod         0.002174        0.001299
+  MultipleLines         0.002080        0.001149
+StreamingMovies         0.002079        0.000488
+
+6. BUSINESS INTERPRETATION
+- Recall measures the proportion of actual churners identified.
+- Precision measures the proportion of flagged customers who churned.
+- False negatives are churned customers the model did not flag.
+- ROC-AUC measures ranking quality.
+- Average precision summarizes precision-recall performance.
+- Lower Brier scores indicate better probability accuracy.
+
+7. LIMITATIONS
+- Test metrics are snapshot-based estimates.
+- No threshold tuning was performed on test data.
+- Feature importance is not causal evidence.
+- Correlated features can distort importance.
+- Test results must not drive model selection.
+- Business deployment needs external validation.

@@ -1,0 +1,33 @@
+CUSTOMER CHURN - MODEL TRAINING REPORT
+============================================================
+
+1. TRAINING DATA
+Training customers: 5,634
+Input features: 19
+Churned customers: 1,495
+Churn rate: 26.54%
+
+2. TRAINING METHODOLOGY
+Cross-validation: 5-fold stratified
+Preprocessing: fitted separately in each fold
+Model selection: mean cross-validation ROC-AUC
+Held-out test data: not used
+
+3. MODEL COMPARISON
+                 model  mean_roc_auc  std_roc_auc  mean_accuracy  std_accuracy  mean_precision  std_precision  mean_recall  std_recall  mean_f1   std_f1
+hist_gradient_boosting      0.847710     0.010345       0.805114      0.011682        0.667130       0.029753     0.531104    0.031188 0.590972 0.026634
+   logistic_regression      0.845950     0.012379       0.748138      0.015307        0.516482       0.018901     0.801338    0.037933 0.627927 0.023225
+         random_forest      0.843465     0.008241       0.779732      0.011331        0.568894       0.018072     0.702341    0.033778 0.628349 0.021435
+
+4. SELECTED MODEL
+Best model: hist_gradient_boosting
+Cross-validation ROC-AUC: 0.8477
+Cross-validation F1: 0.5910
+
+5. IMPORTANT LIMITATIONS
+- CV scores estimate validation performance.
+- These are not held-out test scores.
+- No hyperparameter search was performed.
+- Models were trained on a customer snapshot.
+- Churn associations do not prove causation.
+- Final evaluation occurs in Phase 8.

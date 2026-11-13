@@ -1,0 +1,69 @@
+CUSTOMER CHURN - SQL ANALYTICS REPORT
+============================================================
+
+1. CUSTOMER OVERVIEW
+Total customers: 7,043
+Churned customers: 1,869
+Non-churned customers: 5,174
+Churn rate: 26.54%
+Non-churned share: 73.46%
+
+2. MONTHLY CHARGE EXPOSURE
+Total monthly charges: 456,116.60
+Churned customers' monthly charges: 139,130.85
+Exposure share: 30.50%
+
+These are dataset monetary units.
+The dataset does not specify a currency.
+Exposure is not verified financial loss.
+
+3. CHURN BY CONTRACT
+      contract  total_customers  churned_customers  retained_customers  churn_rate_pct
+Month-to-month             3875               1655                2220           42.71
+      One year             1473                166                1307           11.27
+      Two year             1695                 48                1647            2.83
+
+4. CHURN BY TENURE
+tenure_group  total_customers  churned_customers  churn_rate_pct
+ 0-12 months             2186               1037           47.44
+13-24 months             1024                294           28.71
+25-48 months             1594                325           20.39
+  49+ months             2239                213            9.51
+
+5. CHURN BY INTERNET SERVICE
+internet_service  total_customers  churned_customers  churn_rate_pct
+     Fiber optic             3096               1297           41.89
+             DSL             2421                459           18.96
+              No             1526                113            7.40
+
+6. CHURN BY PAYMENT METHOD
+           payment_method  total_customers  churned_customers  churn_rate_pct
+         Electronic check             2365               1071           45.29
+             Mailed check             1612                308           19.11
+Bank transfer (automatic)             1544                258           16.71
+  Credit card (automatic)             1522                232           15.24
+
+7. REVENUE EXPOSURE BY CONTRACT
+      contract  total_customers  churned_customers  churned_monthly_charges  average_monthly_charges
+Month-to-month             3875               1655                120847.10                    66.40
+      One year             1473                166                 14118.45                    65.05
+      Two year             1695                 48                  4165.30                    60.77
+
+8. DATA QUALITY
+total_rows                 7043
+unique_customers           7043
+missing_total_charges        11
+invalid_churn_labels          0
+invalid_monthly_charges       0
+
+9. BUSINESS INTERPRETATION
+- Compare churn across contract segments.
+- Investigate early-tenure customer churn.
+- Review service and payment friction.
+- Prioritize retention experiments.
+
+10. LIMITATIONS
+- Segment associations are not causal effects.
+- This is a customer-level snapshot.
+- Cohort retention requires historical data.
+- No currency should be assumed.

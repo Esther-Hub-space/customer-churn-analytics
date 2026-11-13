@@ -1,0 +1,13 @@
+CUSTOMER CHURN DATASET SUMMARY
+========================================
+Total customers: 7,043
+Total columns: 21
+Churned customers: 1,869
+Retained customers: 5,174
+Churn rate: 26.54%
+Duplicate rows: 0
+Duplicate customer IDs: 0
+Average monthly charges: 64.76
+
+Missing values:
+TotalCharges: 11

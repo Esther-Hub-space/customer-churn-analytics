@@ -1,0 +1,28 @@
+CUSTOMER CHURN - EXPLORATORY ANALYSIS
+==================================================
+Total customers: 7,043
+Churned customers: 1,869
+Retained customers: 5,174
+Churn rate: 26.54%
+
+Average monthly charges:
+64.76
+
+CHURN BY CONTRACT
+      Contract  customers  churned  churn_rate
+Month-to-month       3875     1655   42.709677
+      One year       1473      166   11.269518
+      Two year       1695       48    2.831858
+
+CHURN BY INTERNETSERVICE
+InternetService  customers  churned  churn_rate
+    Fiber optic       3096     1297   41.892765
+            DSL       2421      459   18.959108
+             No       1526      113    7.404980
+
+CHURN BY PAYMENTMETHOD
+            PaymentMethod  customers  churned  churn_rate
+         Electronic check       2365     1071   45.285412
+             Mailed check       1612      308   19.106700
+Bank transfer (automatic)       1544      258   16.709845
+  Credit card (automatic)       1522      232   15.243101

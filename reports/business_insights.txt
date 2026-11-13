@@ -1,0 +1,40 @@
+CUSTOMER CHURN - BUSINESS INSIGHTS REPORT
+=======================================================
+
+1. EXECUTIVE SUMMARY
+Total customers: 7,043
+Churned customers: 1,869
+Overall churn rate: 26.54%
+
+2. REVENUE EXPOSURE
+Total monthly charges: 456,116.60
+Churned customers' monthly charges: 139,130.85
+Exposure share: 30.50%
+
+Note: This is a monthly-charge exposure proxy,
+not an observed revenue loss or forecast.
+The dataset does not specify a currency.
+
+3. HIGHEST CHURN SEGMENTS
+Contract: Month-to-month (42.71%)
+Internet service: Fiber optic (41.89%)
+Payment method: Electronic check (45.29%)
+
+4. CONTRACT SEGMENT DETAILS
+      Contract  customers  churned  churn_rate
+Month-to-month       3875     1655   42.709677
+      One year       1473      166   11.269518
+      Two year       1695       48    2.831858
+
+5. BUSINESS RECOMMENDATIONS
+- Investigate high-churn contract segments.
+- Review onboarding and early customer experience.
+- Analyze service complaints and satisfaction.
+- Test targeted retention offers experimentally.
+- Monitor churn rates by customer segment.
+
+6. ANALYTICAL LIMITATIONS
+- These findings are descriptive associations.
+- Churn is not measured as a monthly time series.
+- The dataset does not prove causal effects.
+- Retention campaign impact requires testing.
